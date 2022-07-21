@@ -1,9 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const fName = "Roman";
-const lName = "Lisyuk";
-let cYear = new Date().getFullYear();
-const img = "https://picsum.photos/200";
+const customStyle = {
+  color: "red",
+  fontSize: "20px",
+  border: "1px solid blue"
+};
 
-ReactDOM.render(<h1>Hello people</h1>, document.getElementById("root"));
+customStyle.color = "green";
+
+ReactDOM.render(
+  <h1 style={customStyle}>Hello people</h1>,
+  document.getElementById("root")
+);
